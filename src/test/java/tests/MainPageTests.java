@@ -5,6 +5,7 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.MainPage;
 import pages.NotFoundPage;
@@ -12,6 +13,7 @@ import pages.NotFoundPage;
 import static testdata.Cities.MOSCOW;
 import static testdata.Cities.SPB;
 
+@Tag("regress")
 public class MainPageTests extends BaseTest {
   
   MainPage mp = new MainPage();

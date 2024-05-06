@@ -33,11 +33,11 @@ public class BaseTest {
 
 //    System.setProperty("environment", System.getProperty("environment", "prod"));
     Configuration.browserSize = "1920x1080";
-//    Configuration.baseUrl = "https://demoqa.com";
+    Configuration.baseUrl = "https://trendrealty.ru/";
     Configuration.pageLoadStrategy = "eager";
-//    SelenideLogger.addListener("allure", new AllureSelenide());
-//    Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
-//    Configuration.remote = System.getProperty("browserRemoteUrl");
+    SelenideLogger.addListener("allure", new AllureSelenide());
+    Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
+    Configuration.remote = System.getProperty("browserRemoteUrl");
     
     
     DesiredCapabilities capabilities = new DesiredCapabilities();

@@ -1,9 +1,11 @@
 package tests;
 
+import config.BaseTest;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.BuildPage;
 import pages.FavoritePage;
@@ -12,8 +14,8 @@ import pages.MainPage;
 import static testdata.Builds.SPB_BUILDER;
 import static testdata.Cities.SPB;
 
-
-public class FavoritePageTests {
+@Tag("regress")
+public class FavoritePageTests extends BaseTest {
   
   MainPage mp = new MainPage();
   FavoritePage fp = new FavoritePage();
