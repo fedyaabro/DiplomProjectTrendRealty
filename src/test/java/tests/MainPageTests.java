@@ -38,7 +38,7 @@ public class MainPageTests extends BaseTest {
   @Owner("Абросимов Федор")
   @Test
   void placeholderShouldBeChangeAfterClick() {
-    mp.openMainPage(SPB);
+    mp.openMainPage(MOSCOW);
     mp.placeHoldelShouldHaveText("ЖК, улица, застройщик, банк");
     mp.searchField().click();
     mp.placeHoldelShouldHaveText("Поиск по названию ЖК, застройщику, метро, району, улице или банку");
