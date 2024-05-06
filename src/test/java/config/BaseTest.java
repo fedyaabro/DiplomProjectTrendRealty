@@ -31,7 +31,7 @@ public class BaseTest {
   @BeforeAll
   static void beforeAll() {
 
-//    System.setProperty("environment", System.getProperty("environment", "prod"));
+    System.setProperty("environment", System.getProperty("environment", "prod"));
     Configuration.browserSize = "1920x1080";
     Configuration.baseUrl = "https://trendrealty.ru/";
     Configuration.pageLoadStrategy = "eager";
