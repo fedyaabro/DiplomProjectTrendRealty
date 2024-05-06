@@ -3,7 +3,7 @@
     "project": "demoqa",
     "environment": "some env",
     "comment": "comment",
-    "reportLink": "https://jenkins.autotests.cloud/job/024_fedya_abro_qaguru_qaform_owner_tests/35/allure/",
+    "reportLink": "https://jenkins.autotests.cloud/job/024_fedyaabro_Diploma_TrendRealty/6/allure/",
     "language": "en",
     "messenger": "telegram",
     "allureFolder": "build/allure-report/",
