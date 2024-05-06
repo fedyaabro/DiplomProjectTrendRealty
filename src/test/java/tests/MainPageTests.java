@@ -1,6 +1,7 @@
 package tests;
 
 import config.BaseTest;
+import helpers.SetupCookie;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
@@ -18,6 +19,7 @@ public class MainPageTests extends BaseTest {
   
   MainPage mp = new MainPage();
   NotFoundPage nfp = new NotFoundPage();
+  SetupCookie sc = new SetupCookie();
   
   @Feature("TrendRealty.Главная страница")
   @Story("Смена города на главной странице")
@@ -38,7 +40,7 @@ public class MainPageTests extends BaseTest {
   @Owner("Абросимов Федор")
   @Test
   void placeholderShouldBeChangeAfterClick() {
-    mp.openMainPage(MOSCOW);
+    mp.openMainPage(SPB);
     mp.placeHoldelShouldHaveText("ЖК, улица, застройщик, банк");
     mp.searchField().click();
     mp.placeHoldelShouldHaveText("Поиск по названию ЖК, застройщику, метро, району, улице или банку");
@@ -50,6 +52,7 @@ public class MainPageTests extends BaseTest {
   @Owner("Абросимов Федор")
   @Test
   void metroButtonAreOpenMetroMap() {
+    sc.addCookie();
     mp.openMainPage(SPB);
     mp.clickOnMetroButton();
     mp.metroButton().shouldBeVisible();

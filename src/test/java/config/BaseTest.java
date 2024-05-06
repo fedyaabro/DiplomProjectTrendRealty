@@ -23,7 +23,6 @@ public class BaseTest {
   
   @BeforeEach
   void beforeEach() {
-//    SelenideLogger.addListener("allure", new AllureSelenide().includeSelenideSteps(true));
     open("https://trendrealty.ru/images/favicons/favicon.ico");
     WebDriverRunner.getWebDriver().manage().addCookie(new Cookie("selected_city", "58c665588b6aa52311afa01b"));
   }
