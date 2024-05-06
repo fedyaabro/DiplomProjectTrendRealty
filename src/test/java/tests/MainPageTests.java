@@ -52,7 +52,6 @@ public class MainPageTests extends BaseTest {
   @Owner("Абросимов Федор")
   @Test
   void metroButtonAreOpenMetroMap() {
-    sc.addCookie();
     mp.openMainPage(SPB);
     mp.clickOnMetroButton();
     mp.metroButton().shouldBeVisible();
