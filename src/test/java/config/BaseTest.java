@@ -23,7 +23,7 @@ public class BaseTest {
   
   @BeforeEach
   void beforeEach() {
-    SelenideLogger.addListener("allure", new AllureSelenide().includeSelenideSteps(true));
+//    SelenideLogger.addListener("allure", new AllureSelenide().includeSelenideSteps(true));
     open("https://trendrealty.ru/images/favicons/favicon.ico");
     WebDriverRunner.getWebDriver().manage().addCookie(new Cookie("selected_city", "58c665588b6aa52311afa01b"));
   }
@@ -35,7 +35,7 @@ public class BaseTest {
     Configuration.browserSize = "1920x1080";
     Configuration.baseUrl = "https://trendrealty.ru/";
     Configuration.pageLoadStrategy = "eager";
-    SelenideLogger.addListener("allure", new AllureSelenide());
+    SelenideLogger.addListener("allure", new AllureSelenide().includeSelenideSteps(true));
     Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wd/hub";
     Configuration.remote = System.getProperty("browserRemoteUrl");
     
