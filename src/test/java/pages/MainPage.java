@@ -26,7 +26,7 @@ public class MainPage {
   }
   
   public SearchFieldComponent metroButton() {
-    return new SearchFieldComponent("Кнопка [Метро]", $(".location-controls").lastChild());
+    return new SearchFieldComponent("Кнопка Метро", $(".location-controls").lastChild());
   }
   
   public PlaceHolderComponent searchField() {

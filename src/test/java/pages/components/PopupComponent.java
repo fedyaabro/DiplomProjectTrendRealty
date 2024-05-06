@@ -19,10 +19,6 @@ public class PopupComponent {
     step("[%s] отображается".formatted(description), () -> element.shouldBe(visible));
     return this;
   }
-   public PopupComponent shouldNotBeVisible() {
-    step("[%s]  не отображается".formatted(description), () -> element.shouldNot(visible));
-    return this;
-  }
   public PopupComponent click() {
     step("Нажали на [%s]".formatted(description), () -> element.click());
     return this;

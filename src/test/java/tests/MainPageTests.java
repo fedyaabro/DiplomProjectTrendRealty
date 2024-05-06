@@ -19,7 +19,6 @@ public class MainPageTests extends BaseTest {
   
   MainPage mp = new MainPage();
   NotFoundPage nfp = new NotFoundPage();
-  SetupCookie sc = new SetupCookie();
   
   @Feature("TrendRealty.Главная страница")
   @Story("Смена города на главной странице")

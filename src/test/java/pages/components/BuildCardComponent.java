@@ -20,8 +20,8 @@ public class BuildCardComponent {
     return this;
   }
   
-  public BuildCardComponent buildObjectShouldHaveCorrectTitle(String title) {
-    step("Карточка ЖК содержит текст[%s]".formatted(description), () -> {
+  public BuildCardComponent shouldHaveTitle(String title) {
+    step("Карточка ЖК содержит текст [%s]".formatted(description), () -> {
       return element.shouldHave(attribute("title", title));
     });
     return this;

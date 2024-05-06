@@ -21,18 +21,8 @@ public class SearchFieldComponent {
     return this;
   }
   
-  public SearchFieldComponent shouldNotBeVisible() {
-    step("[%s]  не отображается".formatted(description), () -> element.shouldNot(visible));
-    return this;
-  }
-  
   public SearchFieldComponent click() {
     step("Нажали на [%s]".formatted(description), () -> element.click());
-    return this;
-  }
-  
-  public SearchFieldComponent shouldHaveText(String text) {
-    step("[%s] содержит текст".formatted(description), () -> element.shouldHave(text(text)));
     return this;
   }
   

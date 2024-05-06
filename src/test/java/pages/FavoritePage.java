@@ -3,7 +3,6 @@ package pages;
 import io.qameta.allure.Step;
 import pages.components.BuildCardComponent;
 import pages.components.HeaderComponent;
-import pages.components.PlaceHolderComponent;
 import testdata.URLs;
 
 import static com.codeborne.selenide.Selenide.$;
@@ -16,7 +15,7 @@ public class FavoritePage {
   }
   
   public BuildCardComponent removeFromFavoriteBtn() {
-    return new BuildCardComponent("Кнопка [Убрать из избранного]", $(".obj-card-footer__button_like"));
+    return new BuildCardComponent("Кнопка Убрать из избранного", $(".obj-card-footer__button_like"));
   }
   public HeaderComponent emptyFavoritePlaceholder() {
     return new HeaderComponent("Плейсхолдер 'Вы пока ничего не добавили'", $(".status-loading__empty .h4"));
@@ -45,7 +44,7 @@ public class FavoritePage {
   }
    @Step("Проверяем название добавленного жк")
   public FavoritePage addedBuildHaveCorrectName(String buildName) {
-    buildCard().buildObjectShouldHaveCorrectTitle(buildName);
+    buildCard().shouldHaveTitle(buildName);
     return this;
   }
   
