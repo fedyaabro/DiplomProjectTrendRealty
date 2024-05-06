@@ -39,7 +39,7 @@ public class FavoritePageTests extends BaseTest {
   
   @Feature("TrendRealty.Страница избранного")
   @Story("Удаление из избранного")
-  @DisplayName("Проверяем добавление жк в избранное")
+  @DisplayName("Проверяем удаление жк из избранного")
   @Owner("Абросимов Федор")
   @Test
   void removeFromFavoriteIsSuccess() {
