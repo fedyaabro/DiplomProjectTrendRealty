@@ -75,7 +75,7 @@ clean owner_tests
 
 
 <a id="report"></a>
-## <img alt="Allure Reports" src="images/logo/Allure.svg" width="40" height="40"/> [Отчеты Allure](https://jenkins.autotests.cloud/job/024_fedyaabro_Diploma_TrendRealty/29/allure/#)
+## <img alt="Allure Reports" src="images/logo/Allure.svg" width="40" height="40"/> [Отчеты Allure](https://jenkins.autotests.cloud/job/024_fedyaabro_Diploma_TrendRealty/allure/#)
 <img title="Allure" src="images/attachment/allure_behaviors.png"> 
 <img title="Allure view" src="images/attachment/allure_overview.png"> 
 <img title="Allure suites" src="images/attachment/allure_suites.png"> 

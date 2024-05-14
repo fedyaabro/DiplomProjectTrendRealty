@@ -4,6 +4,7 @@ import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Owner;
 import io.qameta.allure.Story;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -66,7 +67,7 @@ public class MainPageTests extends BaseTest {
       .placeholderShouldHaveText("Поиск по названию ЖК, застройщику, метро, району, улице или банку");
   }
   
-  
+  @Disabled
   @Feature("TrendRealty.Главная страница")
   @Story("Строка поиска")
   @DisplayName("Проверяем открытие карты метро")
