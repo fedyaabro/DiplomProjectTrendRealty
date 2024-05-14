@@ -94,7 +94,6 @@ public class MainPageTests extends BaseTest {
     Шаги:
       Открыть невалидную страницу /invalidPage
       
-   
     Ожидаемый результат:
     * Открыта 404 cтраница с анимацией и кнопкой возврата на главную'""")
   @Test
